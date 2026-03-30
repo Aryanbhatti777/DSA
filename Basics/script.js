@@ -92,3 +92,27 @@ while(n > 0){
     n = Math.floor(n/10);
 }
 console.log(sum3)
+
+// count digits of a number 
+
+let cdigits = 0;
+let num = 123400058;
+
+while(num > 0){
+    let digit = num % 10;
+    cdigits++
+    num = Math.floor(num/10)
+}
+console.log(cdigits)
+
+// product of digits of a number
+
+let product = 1;
+let number = 12345;
+
+while(number > 0){
+    let digit = number%10
+    product = product*digit;
+    number = Math.floor(number/10)
+}
+console.log(product)
