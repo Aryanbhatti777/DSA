@@ -80,3 +80,15 @@ for(let i = 1; i<= 100; i++){
     }
 }
 console.log(no2dcount);
+
+
+// sum of digits of a number 
+
+let sum3 = 0;
+let n = 12345;
+while(n > 0){
+    let digit = n % 10;
+    sum3 += digit;
+    n = Math.floor(n/10);
+}
+console.log(sum3)
