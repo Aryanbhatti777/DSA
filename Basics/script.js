@@ -116,3 +116,44 @@ while(number > 0){
     number = Math.floor(number/10)
 }
 console.log(product)
+
+// Count even digits in a number
+
+let evenNumbers = 0;
+let ntocounteven = 2468;
+while (ntocounteven > 0) {
+    let digit = ntocounteven % 10
+    if (digit % 2 === 0) evenNumbers++;
+    ntocounteven = Math.floor(ntocounteven / 10)
+}
+console.log(evenNumbers);
+
+// sum of square of digits of a number
+let squareN = 0;
+let nforsquare = 1234;
+while (nforsquare > 0) {
+    let digit = nforsquare % 10;
+    squareN = squareN + digit * digit;
+    nforsquare = Math.floor(nforsquare / 10)
+}
+console.log(squareN)
+
+
+// check armstrong number
+
+let armstrong = 1634;
+let temp = armstrong;
+let digits = 0;
+while (temp > 0) {
+    digits++;
+    temp = Math.floor(temp / 10);
+}
+
+temp = armstrong;
+let sum = 0;
+while (temp > 0) {
+    let digit = temp % 10;
+    sum += digit ** digits;
+    temp = Math.floor(temp / 10);
+}
+console.log(sum === armstrong, armstrong, sum);
