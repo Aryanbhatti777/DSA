@@ -191,3 +191,23 @@ for(let i = 2; i<= 20; i++){
         
     }
 }
+
+// count prime numbers from 1 to n
+ let count1 = 0;
+for(let i = 2; i<= 100; i++){
+    let isPrime = true
+   
+    for(let j = 2; j<= Math.sqrt(i); j++){
+        if(i%j===0){
+            isPrime = false 
+            break
+        }
+        
+    }
+    if(isPrime){
+        count1 += 1
+    }
+
+    
+}
+ console.log(count1);
