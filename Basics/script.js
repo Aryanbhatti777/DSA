@@ -139,21 +139,24 @@ while (nforsquare > 0) {
 console.log(squareN)
 
 
-// check armstrong number
-
+// // check armstrong number
+let result = 0;
 let armstrong = 1634;
 let temp = armstrong;
-let digits = 0;
-while (temp > 0) {
-    digits++;
-    temp = Math.floor(temp / 10);
-}
 
-temp = armstrong;
-let sum = 0;
-while (temp > 0) {
-    let digit = temp % 10;
-    sum += digit ** digits;
-    temp = Math.floor(temp / 10);
+let digits = 0;
+
+
+while(temp>0){
+    digits++;
+    temp = Math.floor(temp/10)
 }
-console.log(sum === armstrong, armstrong, sum);
+temp = armstrong;
+
+
+while(temp>0){
+    let digit = temp%10;
+    result = result + digit**digits;
+    temp = Math.floor(temp/10)
+}
+console.log(armstrong === result, armstrong, result)
