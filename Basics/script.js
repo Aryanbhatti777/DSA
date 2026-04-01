@@ -232,4 +232,15 @@ for(let i = 0; i< arr1.length; i++){
 }
 console.log(result1)
 
+// find the largest number form array
+
+let arr2 = [-3,-7,-2,-9,-5]
+let largest = arr2[0];
+
+for(let i = 0; i < arr2.length; i++){
+    if(arr2[i]>largest){
+        largest = arr2[i]
+    }
+}
+console.log(largest)
 
