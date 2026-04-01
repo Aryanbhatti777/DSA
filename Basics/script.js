@@ -244,3 +244,24 @@ for(let i = 0; i < arr2.length; i++){
 }
 console.log(largest)
 
+
+// count vowels from a string 
+
+let string = "hello"
+let vowels = ["a", "e", "i", "o", "u"]
+let vowelsCount = 0;
+string = string.toLowerCase();
+
+for(let i = 0; i<string.length; i++){
+    let isVowel = false
+    for(let j = 0; j<vowels.length; j++){
+        if(string[i]===vowels[j]){
+            isVowel = true
+            break;
+        }
+    }
+    if(isVowel){
+        vowelsCount++
+    }
+}
+console.log(vowelsCount)
