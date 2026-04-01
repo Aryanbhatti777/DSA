@@ -277,3 +277,17 @@ let name2 = "madam"
 let realName = "madam"
 let reversedName = name2.split('').reverse().join("")
 console.log(realName === reversedName)
+
+// sum of two digits of a string equal to target
+
+let str = [8,7,3,15];
+let target = 11;
+
+for(let i = 0; i<str.length; i++){
+    for(let j = i+1; j<str.length; j++){
+        if(str[i]+str[j]===target){
+            return console.log([str[i],str[j]]);
+            
+        }
+    }
+}
