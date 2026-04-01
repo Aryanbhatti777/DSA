@@ -211,3 +211,25 @@ for(let i = 2; i<= 100; i++){
     
 }
  console.log(count1);
+
+// remove the duplicate numbers from array
+
+let arr1 = [1,2,2,3,4,4];
+let result1 = [];
+
+for(let i = 0; i< arr1.length; i++){
+    let isDuplicate = false
+    for(let j = 0; j< result1.length; j++){
+        if(arr1[i]===result1[j]){
+            isDuplicate = true;
+            break;
+        }
+    }
+    if(!isDuplicate){
+        result1.push(arr1[i])
+    }
+    
+}
+console.log(result1)
+
+
