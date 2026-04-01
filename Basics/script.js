@@ -265,3 +265,15 @@ for(let i = 0; i<string.length; i++){
     }
 }
 console.log(vowelsCount)
+
+// reverse a string
+let name = "Aryan"
+let reverseName = name.split('').reverse().join("")
+console.log(reverseName)
+
+// check if a string is palindrome
+
+let name2 = "madam"
+let realName = "madam"
+let reversedName = name2.split('').reverse().join("")
+console.log(realName === reversedName)
