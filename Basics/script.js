@@ -291,3 +291,14 @@ for(let i = 0; i<str.length; i++){
         }
     }
 }
+
+// sum of 1 to n without loop
+let n1 = 100;
+let sum = (n1**2+n1)/2
+console.log(sum)
+
+// sum of 1 to n even numbers without loop
+
+let n2 = 100;
+let sum4 = (n2/2)*((n2/2)+1)
+console.log(sum4) 
