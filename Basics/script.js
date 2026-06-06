@@ -381,3 +381,35 @@ for(let i = 1; i<= num; i++){
     }
     console.log()
 }
+
+for(let i = 1; i<= num; i++){
+    for(let j = 1; j<= num; j++){
+        process.stdout.write("* ")
+    }
+    console.log();
+    
+}
+
+for(let i = 1; i<= num; i++){
+    for(let j = 1; j<= i; j++){
+        process.stdout.write(digit.toString())
+    }
+    console.log();
+    digit++
+}
+
+for(let i = 1; i<= num; i++){
+    for(let j = 1; j<=i; j++){
+        process.stdout.write(j.toString()+" ")
+        
+    }
+    console.log()
+}
+
+for(let i = 1; i<= num; i++){
+    for(let j = 1 ; j<=num-i+1; j++){
+        process.stdout.write(j.toString()+" ")
+    }
+    console.log();
+    
+}
