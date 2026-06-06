@@ -322,3 +322,62 @@ for(let i = 1; i<=5; i++){
     }
     console.log(row)
 }
+let num = 5;
+for(let i = 1; i<=num; i++){
+
+    for(let j = 1; j<=i; j++){
+        process.stdout.write("* ")
+    }
+    console.log()
+}
+
+for(let i = 1; i<=num; i++){
+    for(let j = 1; j<= num-i+1; j++){
+        process.stdout.write("* ")
+    }
+    console.log();
+    
+}
+
+for(let i = 1; i<= num; i++){
+    for(let j = 1; j<= num-i; j++){
+        process.stdout.write(" ")
+    }
+    for(let k = 1; k<= 2*i-1;k++ ){
+        process.stdout.write("*")
+    }
+    console.log();
+    
+}
+
+for(let i = 1; i<= num; i++){
+    for(let j = 1; j<= num-i; j++){
+        process.stdout.write(" ")
+    }
+    for(let k = 1; k<= 2*i-1;k++ ){
+        process.stdout.write("*")
+    }
+   
+    console.log();
+    
+}
+
+for(let i = 1; i<= num-1; i++){
+    for(let j = 1; j<= i; j++){
+        process.stdout.write(" ")
+    }
+    for(let k = 1; k<= (num-i)*2-1; k++){
+        process.stdout.write("*")
+    }
+    console.log()
+}
+
+let digit = 1;
+
+for(let i = 1; i<= num; i++){
+    for(let j = 1; j<=i; j++){
+        process.stdout.write(digit.toString()+" ")
+        digit++;
+    }
+    console.log()
+}
