@@ -413,3 +413,42 @@ for(let i = 1; i<= num; i++){
     console.log();
     
 }
+
+for(let i = 1; i<= num; i++){
+    
+    for(let j = 1; j<= num;j++){
+       
+            if(j == 1 || j == 5 || i == 1 || i == 5){
+                process.stdout.write("* ")
+            }else{
+                process.stdout.write("  ")
+            }
+            
+        
+    }
+    
+    
+console.log();
+
+}
+let alphabet =  65; 
+
+for(let i = 1; i<= num; i++){
+    
+    for(let j = 1; j<=i ; j++){
+        process.stdout.write(String.fromCharCode(alphabet)+ " ")
+        
+    }
+    alphabet++
+    console.log()
+}
+
+for(let i = 1; i<= num; i++){
+    let alphabet =  65; 
+    for(let j = 1; j<=i ; j++){
+        process.stdout.write(String.fromCharCode(alphabet)+ " ")
+         alphabet++
+    }
+   
+    console.log()
+}
