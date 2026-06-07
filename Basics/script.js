@@ -577,3 +577,20 @@ while(i<arr.length-1){
 if(okay == true){
     console.log("Sorted")
 }
+
+let arr = [ 1,2,3,4,5,6,7,8,9]
+let digit = arr[0]
+for(let i = 0; i<arr.length; i++){
+    arr[i] = arr[i+1];    
+}
+arr[arr.length-1] = digit;
+console.log(arr)
+
+let arr = [1, 2, 3, 4, 5, 6, 7, 8, 9]
+let digit = arr[arr.length-1];
+
+for(let i = arr.length-1; i>= 1; i--){
+    arr[i] = arr[i-1]
+}
+arr[0] = digit;
+console.log(arr)
