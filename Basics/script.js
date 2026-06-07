@@ -532,19 +532,17 @@ for(let i = 2; i<arr.length; i++){
 
 console.log("Difference between max and min number is : ",max-min)
 
-let arr = [0,1,0,2]
+let arr = [1,0,2,0,3,0,4,0,5,0,6,0,7,0,8,0,9]
 
-let i = arr.length-1; j = arr.length-1;
+let j = 0;
 
-while(i !== 0){
-    let temp;
-    if(arr[i] == 0){
-        temp = arr[i];
-        arr[i] = arr[j];
+for(let i = 0; i< arr.length; i++){
+    if(arr[i] != 0){
+        let temp = arr[i];
+        arr[i] = arr[j]
         arr[j] = temp;
-        j--;
+        j++
     }
-    i--
 }
 
 console.log(arr)
