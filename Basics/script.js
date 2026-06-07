@@ -470,3 +470,27 @@ for(let i = 0; i<arr.length; i++){
     }
 }
 console.log(count)
+
+let arr = [10, 20, 30, 40, 25];
+let target = 25;
+let found = arr.includes(target)
+if(found){
+    console.log("Found")
+}else{
+    console.log("Not found");
+    
+}
+
+let arr = [1, 2, 3, 4, 5];
+
+let i = 0, j = arr.length-1;
+ 
+while(i !== j){
+    let temp = 0;
+    temp = arr[i];
+    arr[i] = arr[j]
+    arr[j] = temp;
+    i++;
+    j--;
+}
+console.log(arr);
