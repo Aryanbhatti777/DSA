@@ -451,4 +451,22 @@ for(let i = 1; i<= num; i++){
     }
    
     console.log()
+}  
+
+let arr = [5, 8, 2, 10, 7];
+let target = 10;
+for(let i = 0; i < arr.length; i++ ){
+    if(arr[i] === target){
+        console.log("Target found at index: ", i)
+    }
 }
+
+let arr = [1, 2, 3, 2, 4, 2, 5];
+let target = 2;
+let count= 0
+for(let i = 0; i<arr.length; i++){
+    if(arr[i] === 2){
+        count++
+    }
+}
+console.log(count)
