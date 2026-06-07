@@ -518,3 +518,33 @@ for(let i = 2; i<arr.length; i++){
 }
 
 console.log(max, smax)
+
+let arr = [5, 10, 3, 20];
+let max = Math.max(arr[0],arr[1]) , min = Math.min(arr[0],arr[1]);
+
+for(let i = 2; i<arr.length; i++){
+    if(arr[i] > max){
+        max = arr[i];
+    }else if(arr[i] < min){
+        min = arr[i]
+    }
+}
+
+console.log("Difference between max and min number is : ",max-min)
+
+let arr = [1, 0, 2, 0, 3, 0, 4];
+
+let i = arr.length-1; j = arr.length-1;
+
+while(i !== 0){
+    let temp;
+    if(arr[i] == 0){
+        temp = arr[i];
+        arr[i] = arr[j];
+        arr[j] = temp;
+        j--;
+    }
+    i--
+}
+
+console.log(arr)
