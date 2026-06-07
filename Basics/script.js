@@ -465,7 +465,7 @@ let arr = [1, 2, 3, 2, 4, 2, 5];
 let target = 2;
 let count= 0
 for(let i = 0; i<arr.length; i++){
-    if(arr[i] === 2){
+    if(arr[i] === target){
         count++
     }
 }
@@ -532,7 +532,7 @@ for(let i = 2; i<arr.length; i++){
 
 console.log("Difference between max and min number is : ",max-min)
 
-let arr = [1, 0, 2, 0, 3, 0, 4];
+let arr = [0,1,0,2]
 
 let i = arr.length-1; j = arr.length-1;
 
@@ -560,3 +560,22 @@ for(let i = 0; i<arr.length; i++){
     }
 }
 digits.forEach(item => console.log(item))
+
+let arr = [1, 2, 3, 4, 5];
+
+let i = 0; j = 1;
+ let okay = false;
+while(i<arr.length-1){
+   
+    if(arr[j] > arr[i]){
+        okay = true;
+        i++
+        j++
+    }else{
+        console.log('array not sorted')
+        return;
+    }
+}
+if(okay == true){
+    console.log("Sorted")
+}
