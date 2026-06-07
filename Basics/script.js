@@ -494,3 +494,27 @@ while(i !== j){
     j--;
 }
 console.log(arr);
+
+let arr = [1,2,3,4];
+let arrCopy = [];
+for(let i = 0; i<arr.length; i++ ){
+    arrCopy.push(arr[i])
+}
+console.log(arrCopy)
+
+
+let arr = [10, 20, 5, 30, 25, 70];
+
+let max = Math.max(arr[0], arr[1]);
+let smax = Math.min(arr[0], arr[1]);
+
+for(let i = 2; i<arr.length; i++){
+    if(arr[i] > max ){
+        smax = max; 
+        max = arr[i]
+    }else if(arr[i] > smax && arr[i] < max){
+        smax = arr[i]
+    }
+}
+
+console.log(max, smax)
