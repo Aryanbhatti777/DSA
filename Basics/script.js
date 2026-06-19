@@ -594,3 +594,15 @@ for(let i = arr.length-1; i>= 1; i--){
 }
 arr[0] = digit;
 console.log(arr)
+
+let string = "lksj ljsofasd foasjf ooiasdfo asnopih fonoipe nopdnoa co wfosdj foasdnfoasdn nfoadnfokasd f           ks oksdjfo  ojsdf osdjf oo";
+let splited = string.split(" ")
+
+for(let i = splited.length-1;i>= 0; i--){
+    if(splited[i].length !== 0){
+        console.log(splited[i].length)
+        break;
+    }else{
+        console.log(-1)
+    }
+}
