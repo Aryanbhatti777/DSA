@@ -33,7 +33,7 @@ for(let i = 1; i<= 100; i++){
 }
 console.log(count);
 
-// count even numbers 
+// count even numbers
 
 let ecount = 0;
 for(let i = 1; i<= 100; i++){
@@ -43,7 +43,7 @@ for(let i = 1; i<= 100; i++){
 }
 console.log(ecount);
 
-// count odd numbers 
+// count odd numbers
 
 let ocount = 0;
 for(let i = 1; i<=100; i++){
@@ -82,7 +82,7 @@ for(let i = 1; i<= 100; i++){
 console.log(no2dcount);
 
 
-// sum of digits of a number 
+// sum of digits of a number
 
 let sum3 = 0;
 let n = 12345;
@@ -93,7 +93,7 @@ while(n > 0){
 }
 console.log(sum3)
 
-// count digits of a number 
+// count digits of a number
 
 let cdigits = 0;
 let num = 123400058;
@@ -181,7 +181,7 @@ for(let i = 2; i<= 20; i++){
     let isPrime = true
     for(let j = 2; j<= Math.sqrt(i); j++){
         if(i%j===0){
-            isPrime = false 
+            isPrime = false
             break
         }
         
@@ -199,7 +199,7 @@ for(let i = 2; i<= 100; i++){
    
     for(let j = 2; j<= Math.sqrt(i); j++){
         if(i%j===0){
-            isPrime = false 
+            isPrime = false
             break
         }
         
@@ -245,7 +245,7 @@ for(let i = 0; i < arr2.length; i++){
 console.log(largest)
 
 
-// count vowels from a string 
+// count vowels from a string
 
 let string = "hello"
 let vowels = ["a", "e", "i", "o", "u"]
@@ -301,7 +301,7 @@ console.log(sum)
 
 let n2 = 100;
 let sum4 = (n2/2)*((n2/2)+1)
-console.log(sum4) 
+console.log(sum4)
 
 // printing stars
 for(let i = 1; i<= 5; i++){
@@ -431,7 +431,7 @@ for(let i = 1; i<= num; i++){
 console.log();
 
 }
-let alphabet =  65; 
+let alphabet =  65;
 
 for(let i = 1; i<= num; i++){
     
@@ -444,14 +444,14 @@ for(let i = 1; i<= num; i++){
 }
 
 for(let i = 1; i<= num; i++){
-    let alphabet =  65; 
+    let alphabet =  65;
     for(let j = 1; j<=i ; j++){
         process.stdout.write(String.fromCharCode(alphabet)+ " ")
          alphabet++
     }
    
     console.log()
-}  
+}
 
 let arr = [5, 8, 2, 10, 7];
 let target = 10;
@@ -510,7 +510,7 @@ let smax = Math.min(arr[0], arr[1]);
 
 for(let i = 2; i<arr.length; i++){
     if(arr[i] > max ){
-        smax = max; 
+        smax = max;
         max = arr[i]
     }else if(arr[i] > smax && arr[i] < max){
         smax = arr[i]
@@ -581,7 +581,7 @@ if(okay == true){
 let arr = [ 1,2,3,4,5,6,7,8,9]
 let digit = arr[0]
 for(let i = 0; i<arr.length; i++){
-    arr[i] = arr[i+1];    
+    arr[i] = arr[i+1];
 }
 arr[arr.length-1] = digit;
 console.log(arr)
@@ -605,4 +605,72 @@ for(let i = splited.length-1;i>= 0; i--){
     }else{
         console.log(-1)
     }
+}
+
+var obj = {
+name: 'John',
+greet: function() {
+console.log(this.name);
+}
+};
+
+var greet = obj.greet; greet()
+
+console.log({}+[]);
+
+const f = () => {
+    return{
+        a:1
+    }
+}
+
+console.log(f())
+
+let arr = [10,20,35];
+arr[5] = 100;
+console.log(arr
+
+)
+
+const obj = {
+    a:2,
+    b:3
+}
+console.log(typeof JSON.stringify(obj));
+
+function checkChar(ch) {
+
+  const vow = ["a", "e",  "i",  "o",  "u"]
+  
+  if(vow.includes(ch.toLowerCase()) ){
+    console.log("Vowel")
+  }else if(typeof ch == String){
+    console.log("Consonant")
+  } else {
+      conosle.log("Invalid input")
+  }
+}
+
+checkChar(5)
+
+function factorial(n) {
+let result = 1;
+for(n; n>=1; n--){
+    if(n ===1 || n === 0){
+        return result;
+    }
+    result *= n
+}
+process.out.write(result)
+}
+
+factorial(5)
+
+let prevtwo = 0;
+let prev = 1;
+process.stdout.write("0 1");
+for (let i = 0; i <= 3; i++) {
+    prevtwo = prev;
+    prev = prev + prevtwo;
+    console.log(prev + prevtwo);
 }
