@@ -674,3 +674,34 @@ for (let i = 0; i <= 3; i++) {
     prev = prev + prevtwo;
     console.log(prev + prevtwo);
 }
+
+let tempprev = 0;
+let prevone = 0;
+let prev = 1;
+
+for (let i = 0; i <= 4; i++){
+    process.stdout.write((prevone + prev).toString() + " ")
+    tempprev = prevone + prev;
+    prevone = prev;
+    prev = tempprev;
+
+}
+
+let elements = 0;
+let n = 100;
+let x = 6
+
+for (let i = 1; i <= n; i++) {
+    let factors = 1;
+    for (let j = 1; j <= Math.floor(i / 2); j++) {
+        if (i % j === 0) {
+            factors += 1;
+        }
+    }
+
+    if (factors === x) {
+        elements += 1
+    }
+}
+
+console.log(elements)
