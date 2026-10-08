@@ -759,25 +759,71 @@
 
 // let arr = []
 
-function reverseNumber(n) {
-    n += ""
-    let temp;
-    let i = n.length - 1;
-    let j = 0;
-    n = n.split("")
-    while (n[i] === '0') {
-        n.splice(i, 1)
-        i--
-    }
-    while (j <= i) {
+// function reverseNumber(n) {
+//     n += ""
+//     let temp;
+//     let i = n.length - 1;
+//     let j = 0;
+//     n = n.split("")
+//     while (n[i] === '0') {
+//         n.splice(i, 1)
+//         i--
+//     }
+//     while (j <= i) {
 
-        temp = n[i]
-        n[i] = n[j]
-        n[j] = temp
+//         temp = n[i]
+//         n[i] = n[j]
+//         n[j] = temp
 
-        i--
-        j++
+//         i--
+//         j++
+//     }
+//     return n.join("")
+// }
+
+// function checkPalindrome(n) {
+//     n += ""
+//     let initialValue = n
+//     let temp;
+//     let i = n.length - 1;
+//     let j = 0;
+//     n = n.split("")
+//     while (n[i] === '0') {
+//         n.splice(i, 1)
+//         i--
+//     }
+//     while (j <= i) {
+
+//         temp = n[i]
+//         n[i] = n[j]
+//         n[j] = temp
+
+//         i--
+//         j++
+//     }
+//     if (initialValue === n.join("")) {
+//         console.log("Palindrome")
+//     } else console.log("Not palindrome")
+// }
+
+// checkPalindrome(121)
+
+function solve(input) {
+
+    let arr = []
+    let [a, b] = input.trim().split(/\s+/).map(Number);
+    let min = Math.min(a, b)
+    for (let i = 1; i <= min; i++) {
+        if (a % i === 0 && b % i === 0) {
+            arr.push(i)
+        }
     }
-    return n.join("")
+
+    let max = arr.reduce((acc, curr) => Math.max(acc, curr), 0)
+    console.log(max)
 }
 
+solve(`
+    12
+    15`
+)
