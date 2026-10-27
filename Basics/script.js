@@ -618,7 +618,7 @@
 
 // console.log({}+[]);
 
-// const f = () => {
+// let f = () => {
 //     return{
 //         a:1
 //     }
@@ -632,7 +632,7 @@
 
 // )
 
-// const obj = {
+// let obj = {
 //     a:2,
 //     b:3
 // }
@@ -640,7 +640,7 @@
 
 // function checkChar(ch) {
 
-//   const vow = ["a", "e",  "i",  "o",  "u"]
+//   let vow = ["a", "e",  "i",  "o",  "u"]
   
 //   if(vow.includes(ch.toLowerCase()) ){
 //     console.log("Vowel")
@@ -708,8 +708,8 @@
 
 // function printDigits(n) {
 //  //write your code here
-//  const str = n+"";
-//  const arr = str.split("");
+//  let str = n+"";
+//  let arr = str.split("");
 //  for(let i = arr.length-1; i>=0; i--){
 //      console.log(i)
      
@@ -808,22 +808,73 @@
 
 // checkPalindrome(121)
 
-function solve(input) {
+// function solve(input) {
 
-    let arr = []
-    let [a, b] = input.trim().split(/\s+/).map(Number);
-    let min = Math.min(a, b)
-    for (let i = 1; i <= min; i++) {
-        if (a % i === 0 && b % i === 0) {
-            arr.push(i)
-        }
-    }
+//     let arr = []
+//     let [a, b] = input.trim().split(/\s+/).map(Number);
+//     let min = Math.min(a, b)
+//     for (let i = 1; i <= min; i++) {
+//         if (a % i === 0 && b % i === 0) {
+//             arr.push(i)
+//         }
+//     }
 
-    let max = arr.reduce((acc, curr) => Math.max(acc, curr), 0)
-    console.log(max)
-}
+//     let max = arr.reduce((acc, curr) => Math.max(acc, curr), 0)
+//     console.log(max)
+// }
 
-solve(`
-    12
-    15`
-)
+// solve(`
+//     12
+//     15`
+// )
+
+// let string = "aryan";
+// let string2 = "nadra"
+// let arr = string.split("");
+// let arr2 = string2.split("");
+// let isAnagram = true;
+// arr = arr.sort();
+// arr2 = arr2.sort();
+// console.log(
+//     "arr 1 ->", arr,
+//     "arr2 ->", arr2
+// )
+
+// for (let i = 0; i < arr.length; i++){
+//     if (arr[i] !== arr2[i]) {
+        
+//     }
+// }
+// console.log(isAnagram)
+
+// let input = "cdcda";
+// console.log(input.slice(0, 3))
+
+// var lengthOfLongestSubstring = function (s) {
+//     let length = 0;
+//     let max = 0;
+//     let string = ""
+//     for (let i = 0; i < s.length; i++) {
+//         if (!string.includes(s[i])) {
+
+//             string += s[i];
+//             console.log(string)
+//             length += 1;
+//             if (length > max) {
+//                 max = length;
+//             }
+
+//         } else if (string.includes(s[i])) {
+//             let index = string.indexOf(s[i]);
+//             string = string.slice(index)
+//             string += s[i]
+//             console.log(string)
+//             length = string.length;
+//         }
+//     }
+//     return max;
+// };
+
+// let ans = lengthOfLongestSubstring(input)
+// console.log(ans)
+// console.log(input.slice(1))
